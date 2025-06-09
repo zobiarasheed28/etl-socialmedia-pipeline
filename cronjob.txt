@@ -1,0 +1,6 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# Run ETL pipeline every 10minutes
+*/10 * * * * . /Users/zobiarasheed/Desktop/BI\ final/.env && cd "/Users/zobiarasheed/Desktop/BI final" && /usr/local/bin/python3 run_pipeline.py >> pipeline.log 2>&1
+
